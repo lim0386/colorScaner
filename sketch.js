@@ -36,13 +36,13 @@ function screen() {
   strokeWeight(1);
 
   rect(0, 0, width/4, height/2);
-  rect(160, 0, width/4, height/2);
-  rect(320, 0, width/4, height/2);
-  rect(480, 0, width/4, height/2);
-  rect(0, 240, width/4, height/2);
-  rect(160, 240, 160, height/2);
-  rect(320, 240, 160, height/2);
-  rect(480, 240, 160, height/2);
+  rect(width/4, 0, width/4, height/2);
+  rect(width/4*3, 0, width/4, height/2);
+  rect(width, 0, width/4, height/2);
+  rect(0, height/2, width/4, height/2);
+  rect(width/4, height/2, width/4, height/2);
+  rect(width/4*3, height/2, width/4, height/2);
+  rect(width, height/2, width/4, height/2);
 
   if (x > 0 && x < width/4) {
     x = 0;
