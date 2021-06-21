@@ -35,30 +35,30 @@ function screen() {
   noFill();
   strokeWeight(1);
 
-  rect(0, 0, 160, 240);
-  rect(160, 0, 160, 240);
-  rect(320, 0, 160, 240);
-  rect(480, 0, 160, 240);
-  rect(0, 240, 160, 240);
-  rect(160, 240, 160, 240);
-  rect(320, 240, 160, 240);
-  rect(480, 240, 160, 240);
+  rect(0, 0, width/4, height/2);
+  rect(160, 0, width/4, height/2);
+  rect(320, 0, width/4, height/2);
+  rect(480, 0, width/4, height/2);
+  rect(0, 240, width/4, height/2);
+  rect(160, 240, 160, height/2);
+  rect(320, 240, 160, height/2);
+  rect(480, 240, 160, height/2);
 
-  if (x > 0 && x < 160) {
+  if (x > 0 && x < width/4) {
     x = 0;
   }
-  if (x > 160 && x < 320) {
-    x = 160;
+  if (x > width/4 && x < width/2) {
+    x = width/4;
   }
-  if (x > 320 && x < 480) {
-    x = 320;
+  if (x > width/2 && x < width/4*3) {
+    x = width/2;
   }
-  if (x > 480 && x < 640) {
-    x = 480;
+  if (x > width/4*3 && x < width) {
+    x = width/4*3;
   }
 
-  if (mouseY > 240) {
-    y = 240;
+  if (mouseY > height/2) {
+    y = height/2;
   } else {
     y = 0;
   }
@@ -66,7 +66,7 @@ function screen() {
   r = 0;
   g = 0;
   b = 0;
-  let realPic = get(x, y, 160, 240);
+  let realPic = get(x, y, width/4, height/2);
   let allImage = realPic.width * realPic.height;
   // let allImage = width * height
   realPic.loadPixels();
