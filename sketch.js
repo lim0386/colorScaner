@@ -37,11 +37,11 @@ function screen() {
 
   rect(0, 0, width/4, height/2);
   rect(width/4, 0, width/4, height/2);
-  rect(width/4*3, 0, width/4, height/2);
+  rect((width/4)*3, 0, width/4, height/2);
   rect(width, 0, width/4, height/2);
   rect(0, height/2, width/4, height/2);
   rect(width/4, height/2, width/4, height/2);
-  rect(width/4*3, height/2, width/4, height/2);
+  rect((width/4)*3, height/2, width/4, height/2);
   rect(width, height/2, width/4, height/2);
 
   if (x > 0 && x < width/4) {
@@ -53,8 +53,8 @@ function screen() {
   if (x > width/2 && x < width/4*3) {
     x = width/2;
   }
-  if (x > width/4*3 && x < width) {
-    x = width/4*3;
+  if (x > (width/4)*3 && x < width) {
+    x = (width/4)*3;
   }
 
   if (mouseY > height/2) {
