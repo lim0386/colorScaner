@@ -6,7 +6,8 @@ let x = 0;
 let y = 0;
 
 function setup() {
-  createCanvas(640, 480);
+  // createCanvas(640, 480);
+  createCanvas(windowWidth, windowHeight);
   osc = new p5.Oscillator("sine");
   img = createCapture(VIDEO);
   img.hide();
@@ -15,7 +16,7 @@ function setup() {
 
 function draw() {
   // 0=red, 60=yellow, 120=green, 180=cyan, 240=blue, 300=magenta
-  image(img, 0, 0, 640, 480);
+  image(img, 0, 0, width, height);
   screen();
 }
 function playOscillator() {
